@@ -1,0 +1,9 @@
+Building GreenCoin
+
+See doc/readme-qt.rst for instructions on building GreenCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of GreenCoin.
+
+See doc/build-*.txt for instructions on building GreenCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of GreenCoin.

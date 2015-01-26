@@ -1,0 +1,16 @@
+obj/walletdb.o: walletdb.cpp walletdb.h db.h main.h bignum.h util.h \
+ uint256.h netbase.h serialize.h allocators.h version.h clientversion.h \
+ compat.h sync.h net.h mruset.h protocol.h addrman.h script.h keystore.h \
+ crypter.h key.h scrypt_mine.h bitcoinrpc.h \
+ json/json_spirit_reader_template.h json/json_spirit_value.h \
+ json/json_spirit_error_position.h json/json_spirit_writer_template.h \
+ json/json_spirit_utils.h checkpoints.h hash.h sph_groestl.h sph_types.h \
+ base58.h wallet.h ui_interface.h
+walletdb.cpp walletdb.h db.h main.h bignum.h util.h :
+ uint256.h netbase.h serialize.h allocators.h version.h clientversion.h :
+ compat.h sync.h net.h mruset.h protocol.h addrman.h script.h keystore.h :
+ crypter.h key.h scrypt_mine.h bitcoinrpc.h :
+ json/json_spirit_reader_template.h json/json_spirit_value.h :
+ json/json_spirit_error_position.h json/json_spirit_writer_template.h :
+ json/json_spirit_utils.h checkpoints.h hash.h sph_groestl.h sph_types.h :
+ base58.h wallet.h ui_interface.h :
