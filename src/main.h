@@ -41,7 +41,7 @@ static const int64 MAX_MINT_PROOF_OF_STAKE = 1 * CENT;
 static const int64 MIN_TXOUT_AMOUNT = MIN_TX_FEE;
 static const int64 VALUE_CHANGE = 250; // When to switch to New Algo
 static const int64 POS_RESTART = 250; // When to apply fixes to enable PoS
-#define FOUNDATION_ADDRESS "dZi9hpA5nBC6tSAbPSsiMjb6HeQTprcWHz"
+#define FOUNDATION_ADDRESS "7QnihqNNZbfWCVyEqfRJTehVA3Auid45bm"
 #define FOUNDATION_ADDRESS_TEST "mwmPTAA7cSDY8Dd5rRHuYitwS2hByXQpdA"
 
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
