@@ -14,8 +14,7 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
-#include <boost/random/mersenne_twister.hpp>
-#include <boost/random/uniform_int_distribution.hpp>
+
 
 using namespace std;
 using namespace boost;
@@ -1221,8 +1220,7 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 
     // fix block spacing
     // danbi: post 2.0.4 implement new pacing algorithm for PoW & PoS
-       if (nBestHeight > POW_RESTART)
-    {
+     
         if (nActualSpacing < 0)
         {
             if (fDebug && GetBoolArg("-printjunk")) printf(">> %s nActualSpacing = %"PRI64d" corrected to nTargetSpacing (%"PRI64d").\n", fProofOfStake ? "PoS" : "PoW", nActualSpacing, nTargetSpacing);
@@ -1233,7 +1231,7 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
             if (fDebug && GetBoolArg("-printjunk")) printf(">> %s nActualSpacing = %"PRI64d" corrected to nTargetTimespan (%"PRI64d").\n", fProofOfStake ? "PoS" : "PoW", nActualSpacing, nTargetTimespan);
             nActualSpacing=nTargetTimespan;
         }
-    }
+    
     // danbi: old pre 2.0.4 PoS pacing algorithm
     else if (fProofOfStake && GetTotalCoin() > POS_RESTART)
     {       
